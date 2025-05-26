@@ -1,7 +1,6 @@
 package task0421;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.io.*;
 
 /* 
 Настя или Настя?
@@ -20,6 +19,19 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        BufferedReader reader1 = new BufferedReader(new InputStreamReader(System.in));
+        String name1 = reader1.readLine();
+        BufferedReader reader2 = new BufferedReader(new InputStreamReader(System.in));
+        String name2 = reader2.readLine();
+
+        int nl1 = name1.length();
+        int nl2 = name2.length();
+
+        if (name1.equals(name2)) {
+            System.out.println("Имена идентичны");
+        } else if (nl1==nl2){
+            System.out.println("Длины имен равны");
+            }
+        }
 
     }
-}

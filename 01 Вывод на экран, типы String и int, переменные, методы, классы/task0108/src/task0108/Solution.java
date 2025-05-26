@@ -19,15 +19,15 @@ public class Solution {
         int a = 3;
         int b = 2;
 
-        System.out.print("два");
+        //System.out.print("два") - команда вывода выводит всё в строку, без переноса;
         System.out.print(b);
         System.out.print(" плюс ");
-        System.out.print(" минус ");
+        //System.out.print(" минус ")...поэтому задача сводится к деактивации лишнего;
         System.out.print(a);
-        System.out.print("три");
+        //System.out.print("три")...а, значит, путём внимательного чтения, примитивной логики;
         System.out.print(" равно ");
-        System.out.print(" будет ");
-        System.out.print("пять");
+        //System.out.print(" будет ")...и несложного применения базового синтаксиса;
+        //System.out.print("пять")...мы получим искомое;
         System.out.print(a + b);
     }
 }

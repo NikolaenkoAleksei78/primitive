@@ -26,5 +26,13 @@ public class Solution {
 
     public static int sumDigitsInNumber(int number) {
         //напишите тут ваш код
+        String Number=Integer.toString(number);
+        char[] Digits = Number.toCharArray();
+        int sum=0;
+        for (char digit : Digits) {
+            int dig =Integer.parseInt(String.valueOf(digit));
+            sum += dig;
+        }
+        return sum;
     }
 }

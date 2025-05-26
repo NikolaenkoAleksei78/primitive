@@ -35,6 +35,26 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        BufferedReader reader1 = new BufferedReader(new InputStreamReader(System.in));
+        int a = Integer.parseInt(reader1.readLine());
+        BufferedReader reader2 = new BufferedReader(new InputStreamReader(System.in));
+        int b = Integer.parseInt(reader2.readLine());
+        BufferedReader reader3 = new BufferedReader(new InputStreamReader(System.in));
+        int c = Integer.parseInt(reader3.readLine());
 
+        boolean x = a == b;
+        boolean y = b == c;
+        boolean z = a == c;
+        boolean j = (y & x);
+
+        if (j) {
+            System.out.println(a + " " + b + " " + c);
+        }else if (x){
+            System.out.println(a+" "+b);
+        }else if(y) {
+            System.out.println(b+" "+c);
+        }else if(z) {
+            System.out.println(a+" "+c);
+        }
     }
 }

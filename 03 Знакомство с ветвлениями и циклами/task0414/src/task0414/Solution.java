@@ -1,7 +1,6 @@
 package task0414;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.io.*;
 
 /* 
 Количество дней в году
@@ -31,6 +30,21 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int Y = Integer.parseInt(reader.readLine());
+        int x;
+        if (Y % 4==0 ) {
+            if (Y%400 ==0) {
+                x=366;
+            } else if (Y%100==0) {
+                x=365;
+            } else {
+                x = 366;
+            }
+        } else  {
+            x = 365;
+        }
+        System.out.println("количество дней в году: "+x);
 
     }
 }

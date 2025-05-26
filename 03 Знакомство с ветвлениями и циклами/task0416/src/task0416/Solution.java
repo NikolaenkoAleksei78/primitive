@@ -41,6 +41,31 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String LT = reader.readLine();
+        String mLT;
+        float T, sT;
+        if (LT.contains(".")) {
+            int dlm = LT.indexOf('.');
+            mLT = LT.substring(dlm - 1);
+        } else {
+            int mesure = LT.length();
+            mLT = LT.substring(mesure - 1);
+        }
+        T = Float.parseFloat(mLT);
 
+
+
+        if (T >= 5f) {
+            sT = (float) (T - 5.0);
+        }else sT=T;
+
+        if (sT >= 0f & sT < 3f) {
+            System.out.println("зелёный");
+            } else if (sT >= 3f & sT < 4f) {
+                System.out.println("жёлтый");
+            } else if (sT >= 4f & sT < 5f) {
+                System.out.println("красный");
+            }
+        }
     }
-}

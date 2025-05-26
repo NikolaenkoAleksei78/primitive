@@ -18,6 +18,8 @@ Requirements:
 public class Solution {
     public static void main(String[] args) {
         //напишите тут ваш код
+        int S=sqr(5);
+        System.out.println(S);
     }
 
     public static int sqr(int a) {

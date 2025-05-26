@@ -27,6 +27,11 @@ Requirements:
 public class Solution {
     public static void main(String[] args) {
         //напишите тут ваш код
-
+        StringBuilder txt= new StringBuilder();
+        int i;
+        for (i=0; i<10; i++) {
+            txt.append("8");
+            System.out.println(txt);
+        }
     }
 }

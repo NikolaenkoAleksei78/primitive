@@ -19,6 +19,14 @@ Requirements:
 public class Solution {
     public static void main(String[] args) {
         //напишите тут ваш код
+        for (int i=1; i<11; i++) {
+            int T;
+            for (int k = 1; k < 11; k++) {
+                T = i * k;
+                System.out.print(T + " ");
+            }
+            System.out.print("\b\n");
+        }
 
     }
 }
